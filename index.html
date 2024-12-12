@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mèmes</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Générateur de Mèmes</h1>
+    </header><br><br>
+    <div class="action-buttons">
+        <input type="file" id="imageInput" accept="image/*"
+        style="font-family: 'Pacifico', cursive;
+        font-weight: bold">
+        <input type="text" id="topText" placeholder="Texte en haut"
+        style="font-family: 'Pacifico', cursive;
+        font-weight: bold">
+        <input type="text" id="bottomText" placeholder="Texte en bas"
+        style="font-family: 'Pacifico', cursive;
+        font-weight: bold"> 
+    </div>
+    <main>
+        <canvas id="memeCanvas"></canvas>
+        <section id="memeGallery"></section>
+    </main>
+    <div class="action-buttons">
+        <button id="generateButton">Générer</button>
+        <button id="downloadButton">Télécharger</button>
+        <button id="shareButton">Partager</button>
+    </div>
+
+    <div class="gallery-section">
+        <h2>Galerie des Mèmes</h2>
+        <div id="memeGallery1"></div>
+    </div> 
+    <script src="index.js"></script>
+</body>
+</html>
